@@ -6,7 +6,7 @@ import { AiOutlineShoppingCart, AiFillCloseCircle, AiFillPlusCircle, AiFillMinus
 import { BsFillBagCheckFill } from 'react-icons/bs';
 import { MdAccountCircle } from 'react-icons/md';
 const Navbar = ({ logout,cart,user, addToCart, removeFromCart, clearCart, subTotal }) => {
-    console.log(cart, addToCart, removeFromCart, clearCart, subTotal)
+   
     const [dropdown, setDropdown] = useState(false)
 
     const toggleCart = () => {

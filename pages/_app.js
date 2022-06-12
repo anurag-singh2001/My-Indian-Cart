@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }) {
   const [key, setKey] = useState()
   const [progress, setProgress] = useState(0)
   useEffect(() => {
-    console.log("HeyIamause Effect from _app.js")
+    
     router.events.on('routeChangeStart', ()=>{
       setProgress(40)
     })
@@ -29,7 +29,7 @@ function MyApp({ Component, pageProps }) {
       }
 
     } catch (error) {
-      console.log(error)
+      
       localStorage.clear()
     }
     const token = localStorage.getItem('token')
@@ -58,7 +58,7 @@ function MyApp({ Component, pageProps }) {
       newCart[itemCode] = { qty: 1, price, name, size, variant }
     }
     setCart(newCart)
-    console.log(newCart)
+    
     saveCart(newCart)
   }
 

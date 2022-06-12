@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Product from "../models/Product"
 import mongoose from "mongoose";
 const Men = ({ products }) => {
-  console.log(products)
+  
   return (
     <section className="text-gray-400 bg-white-900 body-font">
       <div className="container px-5 py-24 mx-auto">
